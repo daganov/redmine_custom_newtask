@@ -1,0 +1,13 @@
+ru:
+  label_important_info: "Важная информация перед созданием задачи"
+  label_show_block: "Показывать информационный блок"
+  label_info_text: "Текст информационного блока"
+  text_html_allowed: "Разрешено использование HTML"
+  notice_settings_updated: "Настройки успешно обновлены"
+  button_save: Сохранить
+  default_text: "<p>• Все задачи должны соответствовать шаблону XYZ</p>
+<p>• Проверяйте орфографию перед отправкой</p>
+<p>• Если что-то непонятно, то сначала изучите <a href='http://mediawiki.nita.ru' target=_black>Wiki</a></p>"
+  label_project_identifiers: "Идентификаторы проектов"
+  text_project_identifiers_info: "Введите идентификаторы проектов через запятую (например: jenkins, redmine). Оставьте пустым для всех проектов.
+Часть после адреса страницы /projects/ — идентификатор"

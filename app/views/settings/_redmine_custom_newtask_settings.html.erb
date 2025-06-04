@@ -1,0 +1,38 @@
+<%= javascript_include_tag 'jstoolbar', plugin: 'redmine_custom_newtask' %>
+<%= stylesheet_link_tag 'jstoolbar', plugin: 'redmine_custom_newtask' %>
+
+<div class="box tabular">
+  <p>
+    <label for="settings_show_block"><%= l(:label_show_block) %></label>
+    <%= check_box_tag 'settings[show_block]', '1', @settings['show_block'] == '1' %>
+  </p>
+
+  <p>
+    <label for="settings_project_identifiers"><%= l(:label_project_identifiers) %></label>
+    <%= text_field_tag 'settings[project_identifiers]', @settings['project_identifiers'], 
+          size: 50,
+          placeholder: 'jenkins, redmine' %>
+    <em class="info"><%= l(:text_project_identifiers_info) %></em>
+  </p>
+
+  <p>
+    <label for="settings_info_text"><%= l(:label_info_text) %></label>
+    <%= text_area_tag 'settings[info_text]', @settings['info_text'], 
+          id: 'settings_info_text',
+          rows: 15, 
+          cols: 80,
+          class: 'wiki-edit' %>
+    <em class="info"><%= l(:text_html_allowed) %></em>
+  </p>
+</div>
+
+<script>
+  // Активируем редактор
+  $(document).ready(function() {
+    if ($('#settings_info_text').length > 0) {
+      var toolbar = new jsToolBar($('#settings_info_text').get(0));
+      toolbar.setHelpLink('<%= Redmine::Info.help_url %>');
+      toolbar.draw();
+    }
+  });
+</script>
