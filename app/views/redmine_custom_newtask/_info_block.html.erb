@@ -1,5 +1,5 @@
 <% if defined?(info_text) && info_text.present? %>
-<div id="custom-newtask-info" class="box" style="margin-bottom: 20px; padding: 15px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 4px;">
+<div id="custom-newtask-info" class="box">
   <h3 style="margin-top: 0;"><%= raw important_info %></h3>
   
   <div class="custom-content">
@@ -8,6 +8,9 @@
 </div>
 
 <style>
+  #custom-newtask-info {
+    padding: 20px;
+  }
   #custom-newtask-info h3 {
     color: #c00;
     border-bottom: 1px solid #eee;
