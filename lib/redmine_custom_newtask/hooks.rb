@@ -16,7 +16,7 @@ module RedmineCustomNewtask
 
       context[:controller].send(:render_to_string, {
         partial: 'redmine_custom_newtask/info_block',
-        locals: { info_text: settings['info_text'] }
+        locals: { info_text: settings['info_text'], important_info: settings['important_info'] }
       })
     end
   end

@@ -1,5 +1,6 @@
 ru:
-  label_important_info: "Важная информация перед созданием задачи"
+  label_important_info: "Заголовок информационного блока"
+  text_important_info: "Важная информация перед созданием задачи"
   label_show_block: "Показывать информационный блок"
   label_info_text: "Текст информационного блока"
   text_html_allowed: "Разрешено использование HTML"

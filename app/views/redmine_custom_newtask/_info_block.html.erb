@@ -1,6 +1,6 @@
 <% if defined?(info_text) && info_text.present? %>
 <div id="custom-newtask-info" class="box" style="margin-bottom: 20px; padding: 15px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 4px;">
-  <h3 style="margin-top: 0;"><%= l(:label_important_info) %></h3>
+  <h3 style="margin-top: 0;"><%= raw important_info %></h3>
   
   <div class="custom-content">
     <%= raw info_text %>

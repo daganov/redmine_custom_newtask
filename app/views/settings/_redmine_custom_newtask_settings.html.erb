@@ -8,6 +8,14 @@
   </p>
 
   <p>
+    <label for="settings_important_info"><%= l(:label_important_info) %></label>
+    <%= text_field_tag 'settings[important_info]', @settings['important_info'], 
+          size: 80,
+          placeholder: 'Важная информация' %>
+    <em class="info"><%= l(:text_important_info) %></em>
+  </p>
+
+  <p>
     <label for="settings_project_identifiers"><%= l(:label_project_identifiers) %></label>
     <%= text_field_tag 'settings[project_identifiers]', @settings['project_identifiers'], 
           size: 50,

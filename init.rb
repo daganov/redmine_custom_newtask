@@ -9,9 +9,10 @@ Redmine::Plugin.register :redmine_custom_newtask do
   author_url 'https://github.com/daganov/redmine_custom_newtask.git'
 
   settings default: { 
-    'info_text' => '<%= l(:default_text) %>',
-    'show_block' => '1',
-    'project_identifiers' => 'jenkins'
+    'info_text' => '',
+    'show_block' => '0',
+    'project_identifiers' => 'jenkins',
+    'important_info' => 'Важная информация перед созданием задачи'
   }, 
   partial: 'settings/redmine_custom_newtask_settings'
 end
